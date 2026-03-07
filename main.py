@@ -11,6 +11,13 @@ pygame.display.set_caption("Pong Game")
 
 clock = pygame.time.Clock()
 
+# Ball
+ball = pygame.Rect(0, 0, 30, 30)
+ball.center = (WINDOW_WIDTH/2, WINDOW_HEIGTH/2)
+
+# AI-controlled paddle 
+cpu_paddle = pygame.Rect(0, 0, 20, 100)
+cpu_paddle.centery = WINDOW_HEIGTH/2
 
 # GAME LOOP
 while True:
@@ -19,6 +26,12 @@ while True:
             pygame.quit()
             sys.exit()
             break
+
+    # Draw game objects 
+    pygame.draw.ellipse(window, "white", ball)
+    pygame.draw.rect(window, "white", cpu_paddle)
+
+
 
     # Update Display
     pygame.display.update()
