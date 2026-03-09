@@ -40,8 +40,6 @@ def point(winner):
     reset_ball()
 
 
-
-
 # Ball
 ball = pygame.Rect(0, 0, 30, 30)
 ball.center = (SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
@@ -63,6 +61,7 @@ def animate_ball():
         point("cpu")
     if ball.left <= 0:
         point("player")
+
 
 # "AI"-controlled paddle 
 cpu_paddle = pygame.Rect(0, 0, 20, 100)
@@ -114,7 +113,6 @@ while True:
             player_paddle_speed = 6
         else:
             player_paddle_speed = 0
-
 
 
     # Check position of game objects
