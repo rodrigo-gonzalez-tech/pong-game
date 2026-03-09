@@ -107,7 +107,7 @@ while True:
             break
 
         keys = pygame.key.get_pressed()
-        
+
         if keys[pygame.K_UP]:
             player_paddle_speed = -6
         elif keys[pygame.K_DOWN]:
@@ -124,7 +124,7 @@ while True:
     
 
     # Draw game objects 
-    screen.fill("black")
+    screen.fill((25, 25, 25))
 
     cpu_score = score_font.render(str(cpu_points), True, "white")
     player_score = score_font.render(str(player_points), True, "white")
