@@ -6,4 +6,6 @@ I used the pygame library, which I first discovered a couple of years ago when I
 
 This was a small, nostalgic nod to that experience, and it was a lot of fun, so I might play around with the library some more to create more complex games!
 
+You can play by running `python pong.py`
+
 <img src="./screenshot.png" alt="Pong screenshot" width="50%">
